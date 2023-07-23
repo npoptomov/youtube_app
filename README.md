@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Custom Youtube API and YouTube Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains both frontend and backend applications.
 
-## Available Scripts
+## Backend
 
-In the project directory, you can run:
+The backend application is a Django REST API app. It utilizes PostgreSQL as its database and has a QCluster service. 
 
-### `npm start`
+### Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- PostgreSQL server up and running.
+- Python 3.7 or higher
 
-### `npm test`
+#### Configuration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Update your PostgreSQL database configurations in `settings.py`.
 
-### `npm run build`
+#### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Inside the backend folder, install the required python packages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Start the Django server and QCluster service.
 
-### `npm run eject`
+   ```bash
+   python manage.py runserver
+   python manage.py qcluster
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Create a Django superuser to be able to access the frontend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   python manage.py createsuperuser
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The backend application will start on `localhost:8000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For API reference, see the Postman collection `Youtube Custom API.postman_collection.json` in the backend folder which illustrates the endpoints and example json responses.
 
-## Learn More
+#### Docker Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can also run the backend application using Docker.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Build and start the containers using Docker Compose.
 
-### Code Splitting
+   ```bash
+   docker-compose up --build -d
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. After starting the containers, you will need to create a Django superuser to be able to use the frontend.
 
-### Analyzing the Bundle Size
+   ```bash
+   docker exec -it <container_id> python manage.py createsuperuser
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Frontend
 
-### Making a Progressive Web App
+The frontend application can be run using npm.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Getting Started
 
-### Advanced Configuration
+#### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Node.js
+- npm
 
-### Deployment
+#### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Inside the frontend folder, install the required packages.
 
-### `npm run build` fails to minify
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Start the frontend server.
+
+   ```bash
+   npm start
+   ```
+
+The frontend application will start on `localhost:3000`.
+
+## Author
+
+- Nikola Pop Tomov
+
+## License
+
+This project is licensed under the MIT License.
