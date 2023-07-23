@@ -1,0 +1,907 @@
+{
+	"info": {
+		"_postman_id": "913cf3f5-db97-4117-8536-abb3b735c79a",
+		"name": "Youtube Custom API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Video Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5NjgzOTM5LCJpYXQiOjE2ODk2ODM2MzksImp0aSI6IjRmOTkyMDZhN2Y5ZjRiNmI4OWViNjdlOTJhOWFiOGU5IiwidXNlcl9pZCI6MX0.gpfN_U9JBTY1zf0CCVwpTMPsX7Bzw-hbrd5KVML-O50",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/videos/8tEsxbCl21E",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videos",
+						"8tEsxbCl21E"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Video Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/videos/jTkgPI3Uqhg",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"videos",
+								"jTkgPI3Uqhg"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:47:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "167"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"jTkgPI3Uqhg\",\n    \"title\": \"University of Kansas (Lawrence Campus) - August 2017 [FULL HD]\",\n    \"views\": 3210,\n    \"likes\": 10,\n    \"comments\": 1,\n    \"channel\": \"UCneDIDdPqOmXm7K42B1hV5A\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Video Details History",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5NjgzOTM5LCJpYXQiOjE2ODk2ODM2MzksImp0aSI6IjRmOTkyMDZhN2Y5ZjRiNmI4OWViNjdlOTJhOWFiOGU5IiwidXNlcl9pZCI6MX0.gpfN_U9JBTY1zf0CCVwpTMPsX7Bzw-hbrd5KVML-O50",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/videos/8tEsxbCl21E",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videos",
+						"8tEsxbCl21E"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Video Details History",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/videos/epJDC9bOX7g/history/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"videos",
+								"epJDC9bOX7g",
+								"history",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:48:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2561"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-22T20:18:12.898458Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-22T20:17:44.999651Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-21T21:42:44.374761Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-21T21:42:13.896037Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-21T21:41:43.776821Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-21T21:41:13.310177Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20839,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-21T21:40:44.589501Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:52:02.725245Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 128,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:51:32.518894Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:51:03.357519Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:42:46.161102Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:42:15.822277Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:41:45.731954Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:41:15.577445Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:40:45.118147Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"Nina Badric - Dodiri od Stakla LIVE 2018\",\n        \"views\": 20837,\n        \"likes\": 127,\n        \"comments\": 4,\n        \"change_date\": \"2023-07-20T15:40:15.240952Z\",\n        \"change_type\": \"Changed\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Video Comments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5Njg2NDY3LCJpYXQiOjE2ODk2ODYxNjcsImp0aSI6ImUwMGRkOGU0MjM3YjRhZWRhZDU2OTVlMjA1M2Y1YjZjIiwidXNlcl9pZCI6MX0.cGJE572wFMEJOBuoQNYxipL6gVLlxp8N1E1yQdd7Mqw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/videos/zTxxlPGohz0/comments/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videos",
+						"zTxxlPGohz0",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Video Comments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/videos/epJDC9bOX7g/comments/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"videos",
+								"epJDC9bOX7g",
+								"comments",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:50:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "534"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"UgzodGPcV1cbML2or1l4AaABAg\",\n        \"text\": \"Nikad se neces ni maci R..e eto\",\n        \"likes\": 0,\n        \"replies\": 0,\n        \"video\": \"epJDC9bOX7g\"\n    },\n    {\n        \"id\": \"UgyYEI1ey42L1jjLM954AaABAg\",\n        \"text\": \"Jedna medju 10 najlepsih zena u evropi pevanje je suvisno komentarisati prelepo toliko stila elegancije\",\n        \"likes\": 1,\n        \"replies\": 0,\n        \"video\": \"epJDC9bOX7g\"\n    },\n    {\n        \"id\": \"UgzBKbM3E95X5LMXqAZ4AaABAg\",\n        \"text\": \"Prelepaaaa❤️❤️❤️❤️\",\n        \"likes\": 2,\n        \"replies\": 0,\n        \"video\": \"epJDC9bOX7g\"\n    },\n    {\n        \"id\": \"Ugwteg07jCZ5cafHTfp4AaABAg\",\n        \"text\": \"Lutka\",\n        \"likes\": 1,\n        \"replies\": 0,\n        \"video\": \"epJDC9bOX7g\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get All Channel Videos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5NjgzOTM5LCJpYXQiOjE2ODk2ODM2MzksImp0aSI6IjRmOTkyMDZhN2Y5ZjRiNmI4OWViNjdlOTJhOWFiOGU5IiwidXNlcl9pZCI6MX0.gpfN_U9JBTY1zf0CCVwpTMPsX7Bzw-hbrd5KVML-O50",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw/videos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channel",
+						"UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+						"videos",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Channel Videos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/channel/UCmS75G-98QihSusY7NfCZtw/videos/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"channel",
+								"UCmS75G-98QihSusY7NfCZtw",
+								"videos",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:51:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12738"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"CocEMWdc7Ck\",\n        \"title\": \"SHAKIRA || BZRP Music Sessions #53\",\n        \"views\": 590545709,\n        \"likes\": 11165138,\n        \"comments\": 619454,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"A_g3lMcWVy0\",\n        \"title\": \"QUEVEDO || BZRP Music Sessions #52\",\n        \"views\": 554316074,\n        \"likes\": 5671713,\n        \"comments\": 159702,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"0OkiUUU3Odw\",\n        \"title\": \"NATHY PELUSO || BZRP Music Sessions #36\",\n        \"views\": 377044625,\n        \"likes\": 4857846,\n        \"comments\": 169945,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"z7rI82hyels\",\n        \"title\": \"L-Gante || BZRP Music Sessions #38\",\n        \"views\": 326712569,\n        \"likes\": 3726066,\n        \"comments\": 117234,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"RHUKLQ6nWpc\",\n        \"title\": \"TRUENO || BZRP Freestyle Sessions #6\",\n        \"views\": 244925214,\n        \"likes\": 3521848,\n        \"comments\": 89426,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"t490zXLrQDE\",\n        \"title\": \"Snow Tha Product || BZRP Music Sessions #39\",\n        \"views\": 232804812,\n        \"likes\": 4071890,\n        \"comments\": 169281,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"wvz97-lNPH8\",\n        \"title\": \"VILLANO ANTILLANO || BZRP Music Sessions #51\",\n        \"views\": 219636579,\n        \"likes\": 3069642,\n        \"comments\": 102870,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"zj6R6foXaKI\",\n        \"title\": \"ALEMÁN || BZRP Music Sessions #15\",\n        \"views\": 217358840,\n        \"likes\": 2905773,\n        \"comments\": 90400,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"gW165h1-AZE\",\n        \"title\": \"NICKI NICOLE || BZRP Music Sessions #13\",\n        \"views\": 211646066,\n        \"likes\": 3562520,\n        \"comments\": 106535,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"h7U8TqOVyxc\",\n        \"title\": \"TIAGO PZK || BZRP Music Sessions #48\",\n        \"views\": 199281121,\n        \"likes\": 3104572,\n        \"comments\": 106249,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"LDtABz-5Ka4\",\n        \"title\": \"DANI || BZRP Music Sessions #24\",\n        \"views\": 194482779,\n        \"likes\": 2725148,\n        \"comments\": 73213,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"BH6T3CTuncc\",\n        \"title\": \"Nicky Jam || BZRP Music Sessions #41\",\n        \"views\": 163913249,\n        \"likes\": 3722948,\n        \"comments\": 176298,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"HO73gUhiYe0\",\n        \"title\": \"RESIDENTE || BZRP Music Sessions #49\",\n        \"views\": 160429089,\n        \"likes\": 6390796,\n        \"comments\": 339691,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"4OKgRMRDusM\",\n        \"title\": \"Zaramay || BZRP Music Sessions #31\",\n        \"views\": 160214052,\n        \"likes\": 1747906,\n        \"comments\": 84733,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"v5_SYkFpFiY\",\n        \"title\": \"PESO PLUMA || BZRP Music Sessions #55\",\n        \"views\": 152294892,\n        \"likes\": 3191036,\n        \"comments\": 180658,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"prU2g7PBTxs\",\n        \"title\": \"CAZZU || BZRP Music Sessions #32\",\n        \"views\": 148605759,\n        \"likes\": 2310641,\n        \"comments\": 95258,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"WkgHkrM9fo0\",\n        \"title\": \"PAULO LONDRA || BZRP Music Sessions #23\",\n        \"views\": 138975618,\n        \"likes\": 4651071,\n        \"comments\": 255899,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"SSuTme04Bys\",\n        \"title\": \"TRUENO || BZRP Music Sessions #16\",\n        \"views\": 136077987,\n        \"likes\": 2170715,\n        \"comments\": 76930,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Nb_lsnx8BoQ\",\n        \"title\": \"C.R.O || BZRP Music Sessions #29\",\n        \"views\": 126282161,\n        \"likes\": 1748210,\n        \"comments\": 113766,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"QAf-SvxZIx0\",\n        \"title\": \"KHEA || BZRP Music Sessions #34\",\n        \"views\": 118206259,\n        \"likes\": 1811672,\n        \"comments\": 103308,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"yLX87IkvT8I\",\n        \"title\": \"PTAZETA || BZRP Music Sessions #45\",\n        \"views\": 112426100,\n        \"likes\": 2001551,\n        \"comments\": 58341,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"QGDqhpnrIqI\",\n        \"title\": \"DILLOM || BZRP Music Sessions #9\",\n        \"views\": 112346539,\n        \"likes\": 1968238,\n        \"comments\": 67804,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"7MJvKW2KVJQ\",\n        \"title\": \"FRIJO || BZRP Music Sessions #10\",\n        \"views\": 106651003,\n        \"likes\": 1349101,\n        \"comments\": 46150,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"ntCZjb_AAWE\",\n        \"title\": \"ARCANGEL || BZRP Music Sessions #54\",\n        \"views\": 92213121,\n        \"likes\": 2729124,\n        \"comments\": 120895,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Gzs60iBgd3E\",\n        \"title\": \"DUKI || BZRP Music Sessions #50\",\n        \"views\": 91655857,\n        \"likes\": 2958902,\n        \"comments\": 140246,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"HbeLYtQqkIg\",\n        \"title\": \"YSY A || BZRP Music Sessions #37\",\n        \"views\": 81456616,\n        \"likes\": 1691675,\n        \"comments\": 93007,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"1iZ999P03KU\",\n        \"title\": \"KIDDO TOTO || BZRP Music Sessions #11\",\n        \"views\": 80920996,\n        \"likes\": 1097755,\n        \"comments\": 40761,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"FsF3o9XNcN8\",\n        \"title\": \"MORAD || BZRP Music Sessions #47\",\n        \"views\": 78763261,\n        \"likes\": 1318140,\n        \"comments\": 46190,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"o42797MbLRI\",\n        \"title\": \"JOHN C || BZRP Music Sessions #18\",\n        \"views\": 72137270,\n        \"likes\": 1446410,\n        \"comments\": 59041,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"O5Vd-I1gd7Y\",\n        \"title\": \"ANUEL AA || BZRP Music Sessions #46\",\n        \"views\": 67682210,\n        \"likes\": 2080961,\n        \"comments\": 157896,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"G5Wng8W8S8A\",\n        \"title\": \"BIG SOTO || BZRP Music Sessions #28\",\n        \"views\": 67602515,\n        \"likes\": 1230581,\n        \"comments\": 37402,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"-smN6ZUHzgk\",\n        \"title\": \"PACO AMOROSO || BZRP Music Sessions #3\",\n        \"views\": 66816665,\n        \"likes\": 847263,\n        \"comments\": 28012,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Ksg6lbZrxpM\",\n        \"title\": \"DANI || BZRP Freestyle Sessions #7\",\n        \"views\": 56740170,\n        \"likes\": 1356908,\n        \"comments\": 58349,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"joNX1WcXUck\",\n        \"title\": \"DON PATRICIO || BZRP Music Sessions #25\",\n        \"views\": 54773046,\n        \"likes\": 995548,\n        \"comments\": 49644,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Gu7l77nCfZY\",\n        \"title\": \"MESITA || BZRP Music Sessions #12\",\n        \"views\": 50838840,\n        \"likes\": 705140,\n        \"comments\": 25857,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"r63YPAW2G9M\",\n        \"title\": \"Chucky73 || BZRP Music Sessions #43\",\n        \"views\": 48776844,\n        \"likes\": 1272275,\n        \"comments\": 54424,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Dmqpcz0OfPw\",\n        \"title\": \"SEVEN KAYNE || BZRP Music Sessions #33\",\n        \"views\": 42610398,\n        \"likes\": 1011862,\n        \"comments\": 53038,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"1R2IyWtKZe8\",\n        \"title\": \"FMK - Perdoname (Bizarrap Remix) (ft. Coscu & Ale Zurita)\",\n        \"views\": 41621989,\n        \"likes\": 417916,\n        \"comments\": 23171,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"ZgDFaniuwQc\",\n        \"title\": \"LIT KILLAH || BZRP Freestyle Session #3\",\n        \"views\": 40857509,\n        \"likes\": 1046802,\n        \"comments\": 26445,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"gTRdmsEeCUU\",\n        \"title\": \"NEUTRO SHORTY || BZRP Music Sessions #21\",\n        \"views\": 40694553,\n        \"likes\": 881117,\n        \"comments\": 33101,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"QAkRObfMBhk\",\n        \"title\": \"ASAN || BZRP Music Sessions #35\",\n        \"views\": 38441844,\n        \"likes\": 848721,\n        \"comments\": 49144,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"X7KC9J-ArdQ\",\n        \"title\": \"LUCHO SSJ || BZRP Music Sessions #26\",\n        \"views\": 35854675,\n        \"likes\": 853620,\n        \"comments\": 44950,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"HzCuP2xvu-I\",\n        \"title\": \"HOMER EL MERO MERO || BZRP Music Sessions #30\",\n        \"views\": 33162873,\n        \"likes\": 798541,\n        \"comments\": 46924,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"3W8Ylhm4_8Y\",\n        \"title\": \"ACZINO || BZRP Freestyle Sessions #8\",\n        \"views\": 32170753,\n        \"likes\": 1215789,\n        \"comments\": 66972,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"q-9Dazkclxk\",\n        \"title\": \"KINDER MALO || BZRP Music Sessions #17 || LADO B\",\n        \"views\": 31070299,\n        \"likes\": 619432,\n        \"comments\": 31923,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"exuRTyiNbYU\",\n        \"title\": \"LALO EBRATT || BZRP Music Sessions #22\",\n        \"views\": 30656476,\n        \"likes\": 699572,\n        \"comments\": 34607,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"J5lloRbf2RQ\",\n        \"title\": \"Pekeño 77 || BZRP Music Sessions #5\",\n        \"views\": 28711270,\n        \"likes\": 468824,\n        \"comments\": 16808,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"of_3rje8oKA\",\n        \"title\": \"MHD || BZRP Music Sessions #44\",\n        \"views\": 28463924,\n        \"likes\": 1091442,\n        \"comments\": 59180,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"HWZhoK-2cG8\",\n        \"title\": \"RAUW ALEJANDRO || BZRP Music Sessions #56\",\n        \"views\": 26580465,\n        \"likes\": 1269560,\n        \"comments\": 82217,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"cWfOVzXiAQE\",\n        \"title\": \"POLIMA WESTCOAST || BZRP Music Sessions #19\",\n        \"views\": 26192073,\n        \"likes\": 738725,\n        \"comments\": 37548,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"HdGDLqRQNII\",\n        \"title\": \"LOUTA || BZRP Music Sessions #20\",\n        \"views\": 20642840,\n        \"likes\": 617920,\n        \"comments\": 42766,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"ybo9fpwTFto\",\n        \"title\": \"BHAVI || BZRP Music Sessions #1\",\n        \"views\": 18840448,\n        \"likes\": 536646,\n        \"comments\": 18547,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"TzUdpcNV-Q8\",\n        \"title\": \"CA7RIEL || BZRP Music Sessions #14\",\n        \"views\": 18558112,\n        \"likes\": 454439,\n        \"comments\": 33790,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Es7IKbFoDHc\",\n        \"title\": \"ECKO || BZRP Freestyle & Music Session\",\n        \"views\": 17668460,\n        \"likes\": 405380,\n        \"comments\": 8320,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"LI5dh5zCKi0\",\n        \"title\": \"KINDER MALO || BZRP Music Sessions #17 || LADO A\",\n        \"views\": 17254538,\n        \"likes\": 502773,\n        \"comments\": 24510,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"-iLUtxzR4ds\",\n        \"title\": \"BLUNTED VATO || BZRP Music Sessions #4\",\n        \"views\": 16719540,\n        \"likes\": 380542,\n        \"comments\": 10002,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"g9-t7vq-Z8M\",\n        \"title\": \"Bizarrap, Trueno, Acru - Jugador del Año\",\n        \"views\": 13817810,\n        \"likes\": 605846,\n        \"comments\": 25140,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"FoI0QYH-jU8\",\n        \"title\": \"Drefquila - A Fuego🔥(Bizarrap Remix)\",\n        \"views\": 12449109,\n        \"likes\": 172792,\n        \"comments\": 6184,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"SrV1GzQ0PTo\",\n        \"title\": \"KODIGO || BZRP Freestyle Session #1\",\n        \"views\": 12034009,\n        \"likes\": 426237,\n        \"comments\": 15613,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"-T0teokLDgU\",\n        \"title\": \"SONY || BZRP Freestyle Session #2\",\n        \"views\": 11884846,\n        \"likes\": 390284,\n        \"comments\": 14759,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"TGPQOAmx8ko\",\n        \"title\": \"BEJO || BZRP Music Sessions #27\",\n        \"views\": 11734247,\n        \"likes\": 355471,\n        \"comments\": 26527,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"t8nB0Fyx69A\",\n        \"title\": \"DREFQUILA || BZRP Music Sessions #7\",\n        \"views\": 10986410,\n        \"likes\": 296191,\n        \"comments\": 9509,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"aEeoXjmQinU\",\n        \"title\": \"ZANTO || BZRP Music Sessions #8\",\n        \"views\": 10335038,\n        \"likes\": 246957,\n        \"comments\": 9459,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"pRNL60WXF3w\",\n        \"title\": \"KODIGO || BZRP Music Sessions #6\",\n        \"views\": 9921833,\n        \"likes\": 289093,\n        \"comments\": 7887,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"2e9CZEAz4OA\",\n        \"title\": \"Khea - SAD 💔 (Bizarrap Remix)\",\n        \"views\": 7012780,\n        \"likes\": 145879,\n        \"comments\": 6726,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"DRvWE82NuG8\",\n        \"title\": \"Bad Bunny - Amorfoda (XOVOX & BIZARRAP Remix)\",\n        \"views\": 6611838,\n        \"likes\": 177730,\n        \"comments\": 8041,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"j7vRA4jDe_A\",\n        \"title\": \"Bizarrap x Estani - Antes que sea tarde⏳(Remix)\",\n        \"views\": 6104979,\n        \"likes\": 84498,\n        \"comments\": 3688,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"Pv7zCD3zj7w\",\n        \"title\": \"KYOTTO x Coscu - My Own (Bizarrap Remix)\",\n        \"views\": 5624520,\n        \"likes\": 144053,\n        \"comments\": 9414,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"gwJzQibnDwU\",\n        \"title\": \"ACRU || BZRP Freestyle Session #4\",\n        \"views\": 5124231,\n        \"likes\": 197155,\n        \"comments\": 9474,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"SaaREFIkZQ8\",\n        \"title\": \"Duki - No vendo trap (Bizarrap Remix)\",\n        \"views\": 4104360,\n        \"likes\": 125282,\n        \"comments\": 6314,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"m1opSTMnyfw\",\n        \"title\": \"BUHO - Khea x Duki x Midel x Arse x Klave (Bizarrap Remix)\",\n        \"views\": 3702045,\n        \"likes\": 90798,\n        \"comments\": 6557,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"1W0RhAei9hk\",\n        \"title\": \"Dani - 21334 (Bizarrap Remix)\",\n        \"views\": 2274874,\n        \"likes\": 71468,\n        \"comments\": 3540,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"M5WgS6wXK04\",\n        \"title\": \"Paulo - Relax (Bizarrap Remix)\",\n        \"views\": 2108188,\n        \"likes\": 76624,\n        \"comments\": 5762,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"mK4xGApQueI\",\n        \"title\": \"Bizarrap x Estani - Se te da tan bien\",\n        \"views\": 1131496,\n        \"likes\": 46266,\n        \"comments\": 2284,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"s5cYXknsDbY\",\n        \"title\": \"Eladio Carrión || BZRP Music Sessions #40\",\n        \"views\": 196506451,\n        \"likes\": 2690774,\n        \"comments\": 74583,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"jAd9kZDpQoc\",\n        \"title\": \"Bizarrap x Duki x Nicki Nicole - YaMeFui\",\n        \"views\": 82958830,\n        \"likes\": 1482975,\n        \"comments\": 48956,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"IpwAXxtjmC8\",\n        \"title\": \"NEO PISTÉA X DUKI - WANDA NARA (Bizarrap Remix)\",\n        \"views\": 19838131,\n        \"likes\": 207344,\n        \"comments\": 8054,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"3GpImlCGRoY\",\n        \"title\": \"Duki x NahueMC - Ready for the Night (Bizarrap Remix)\",\n        \"views\": 978131,\n        \"likes\": 28682,\n        \"comments\": 1566,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"ROvX3m4mhW8\",\n        \"title\": \"Bad Bunny - Soy Peor (Bizarrap Remix)\",\n        \"views\": 941666,\n        \"likes\": 33562,\n        \"comments\": 2519,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"gLLAd4FV6Ys\",\n        \"title\": \"Jeeiph - Tetrix (Bizarrap Remix)\",\n        \"views\": 785137,\n        \"likes\": 28268,\n        \"comments\": 2152,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"SEVBSC1PoSk\",\n        \"title\": \"Ecko - Legend (Bizarrap Remix)\",\n        \"views\": 764081,\n        \"likes\": 23113,\n        \"comments\": 1217,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    },\n    {\n        \"id\": \"i9Q7G_CzsW0\",\n        \"title\": \"Kodigo - Escalera Real👑(Bizarrap Remix)\",\n        \"views\": 718080,\n        \"likes\": 18564,\n        \"comments\": 1124,\n        \"channel\": \"UCmS75G-98QihSusY7NfCZtw\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Channel Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5Njg4ODgzLCJpYXQiOjE2ODk2ODg1ODMsImp0aSI6ImEyMjNiYmQzZTY5MjRjZmJhZmQwNTAwOWFlZjkzNTZlIiwidXNlcl9pZCI6MX0.kw6aIolAYmwkG4FV786SsOARIEAvrEvcqGx2uQk8F00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channel",
+						"UC-lHJZR3Gqxm24_Vd_AJ5Yw"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Channel Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/channel/UCmS75G-98QihSusY7NfCZtw",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"channel",
+								"UCmS75G-98QihSusY7NfCZtw"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:44:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "436"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"UCmS75G-98QihSusY7NfCZtw\",\n    \"title\": \"Bizarrap\",\n    \"views\": 7722213343,\n    \"subscribers\": 20700000,\n    \"video_count\": 83,\n    \"most_viewed_videos\": [\n        \"CocEMWdc7Ck\",\n        \"A_g3lMcWVy0\",\n        \"0OkiUUU3Odw\",\n        \"z7rI82hyels\",\n        \"RHUKLQ6nWpc\",\n        \"t490zXLrQDE\",\n        \"wvz97-lNPH8\",\n        \"zj6R6foXaKI\",\n        \"gW165h1-AZE\",\n        \"h7U8TqOVyxc\"\n    ],\n    \"most_likes_videos\": [\n        \"CocEMWdc7Ck\",\n        \"A_g3lMcWVy0\",\n        \"0OkiUUU3Odw\",\n        \"z7rI82hyels\",\n        \"RHUKLQ6nWpc\",\n        \"t490zXLrQDE\",\n        \"gW165h1-AZE\",\n        \"BH6T3CTuncc\",\n        \"HO73gUhiYe0\",\n        \"WkgHkrM9fo0\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Channel Details History",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg5Njg4ODgzLCJpYXQiOjE2ODk2ODg1ODMsImp0aSI6ImEyMjNiYmQzZTY5MjRjZmJhZmQwNTAwOWFlZjkzNTZlIiwidXNlcl9pZCI6MX0.kw6aIolAYmwkG4FV786SsOARIEAvrEvcqGx2uQk8F00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channel",
+						"UC-lHJZR3Gqxm24_Vd_AJ5Yw"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Channel Details History",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/channel/UCneDIDdPqOmXm7K42B1hV5A/history",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"channel",
+								"UCneDIDdPqOmXm7K42B1hV5A",
+								"history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:51:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2177"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"title\": \"NP95\",\n        \"views\": 926875,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-22T20:18:10.177966Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926875,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-22T20:17:41.867286Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926793,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-21T21:42:41.401329Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926793,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-21T21:42:10.983144Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926793,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-21T21:41:40.728530Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926793,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-21T21:41:10.271281Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926793,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-21T21:40:41.023453Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:51:59.684103Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:51:29.236322Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:50:59.975762Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:42:43.086604Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:42:12.714814Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:41:42.507268Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:41:12.242750Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:40:41.822437Z\",\n        \"change_type\": \"Changed\"\n    },\n    {\n        \"title\": \"NP95\",\n        \"views\": 926716,\n        \"subscribers\": 1160,\n        \"video_count\": 48,\n        \"change_date\": \"2023-07-20T15:40:11.479761Z\",\n        \"change_type\": \"Changed\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "nikola",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "Nikol@@@95",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/token/?username=nikola&password=npoptomov@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "nikola"
+						},
+						{
+							"key": "password",
+							"value": "npoptomov@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "nikola",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Nikol@@@95",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/token/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:51:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MjcwMTUwMiwiaWF0IjoxNjkwMTA5NTAyLCJqdGkiOiI0ZDRjZWI1OGVhYjU0MjM5ODIwYjVkMTgwOTg2Njg0MiIsInVzZXJfaWQiOjF9.Rpcsc1F-9duzIkhuvFPOhvEfld0BBQqNYV2H-kduvAY\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwOTczNTAyLCJpYXQiOjE2OTAxMDk1MDIsImp0aSI6IjRhN2I3ZDQ1MTkzYTRhMjZhMGUzYjliY2Q5NWQyMGM3IiwidXNlcl9pZCI6MX0.frpGupLPSuSgOKlqnW4XoN0C7cH46uCxPz9oUl3Lwxw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4OTcwNzU4NiwiaWF0IjoxNjg5NjIxMTg2LCJqdGkiOiJlYTMyOGMzZGVmNmM0MTI3OGU1OTk0YjA1NTE0ZDZmZCIsInVzZXJfaWQiOjF9.bnRc8lwVOeaK186csb1EBmh2eZYWFtSCTPnPgTSOzxw",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/token/refresh/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MjcwMTUwMiwiaWF0IjoxNjkwMTA5NTAyLCJqdGkiOiI0ZDRjZWI1OGVhYjU0MjM5ODIwYjVkMTgwOTg2Njg0MiIsInVzZXJfaWQiOjF9.Rpcsc1F-9duzIkhuvFPOhvEfld0BBQqNYV2H-kduvAY",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/token/refresh/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jul 2023 10:52:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkwOTczNTIzLCJpYXQiOjE2OTAxMDk1MDIsImp0aSI6ImM5Zjc3Zjc4ZGUwYzQ0MmFhY2FjNTI3MmE5YTFmMzRhIiwidXNlcl9pZCI6MX0.UAGGkGfo7YqGgPbw3szIAlEEkjpZYzL5Di3DHM0ATJ4\"\n}"
+				}
+			]
+		}
+	]
+}
