@@ -1,6 +1,6 @@
 # Custom Youtube API and YouTube Analytics Dashboard
 
-This repository contains both frontend and backend applications.
+This repository contains both front-end and back-end applications.
 
 ## Backend
 
@@ -19,21 +19,22 @@ The backend application is a Django REST API app. It utilizes PostgreSQL as its 
 
 #### Installation
 
-1. Inside the backend folder, install the required python packages.
+1. Inside the backend folder, install the required Python packages.
 
    ```bash
    cd backend
    pip install -r requirements.txt
    ```
 
-2. Start the Django server and QCluster service.
+2. Apply migrations, Start the Django server and QCluster service.
 
    ```bash
+   python manage.py migrate
    python manage.py runserver
    python manage.py qcluster
    ```
 
-3. Create a Django superuser to be able to access the frontend.
+3. Create a Django superuser to be able to access the front-end.
 
    ```bash
    python manage.py createsuperuser
@@ -41,7 +42,7 @@ The backend application is a Django REST API app. It utilizes PostgreSQL as its 
 
 The backend application will start on `localhost:8000`.
 
-For API reference, see the Postman collection `Youtube Custom API.postman_collection.json` in the backend folder which illustrates the endpoints and example json responses.
+For API reference, see the Postman collection `Youtube Custom API.postman_collection.json` in the backend folder which illustrates the endpoints and example JSON responses.
 
 #### Docker Installation
 
@@ -53,7 +54,7 @@ You can also run the backend application using Docker.
    docker-compose up --build -d
    ```
 
-2. After starting the containers, you will need to create a Django superuser to be able to use the frontend.
+2. After starting the containers, you will need to create a Django superuser to be able to log into the front-end app.
 
    ```bash
    docker exec -it <container_id> python manage.py createsuperuser
